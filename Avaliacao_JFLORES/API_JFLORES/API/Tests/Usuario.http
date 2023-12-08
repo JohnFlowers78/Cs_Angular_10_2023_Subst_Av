@@ -1,0 +1,25 @@
+### Listar Usuario
+GET https://localhost:7091/api/usuario/listar
+
+### Buscar Usuario por Nome
+GET https://localhost:7091/api/usuario/buscar/Joao
+
+### Cadastrar Usuario
+POST https://localhost:7091/api/usuario/cadastrar
+Content-Type: application/json
+
+{
+    "Nome": "maria",
+    "Nascimento" : "04/07/2000"
+}
+
+### Alterar Usuario
+PUT https://localhost:7091/api/usuario/alterar/1
+Content-Type: application/json
+
+{
+    "Nome": "José"
+}
+
+### Deletar Usuario
+DELETE https://localhost:7091/api/usuario/deletar/1
